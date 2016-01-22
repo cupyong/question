@@ -1,0 +1,14 @@
+ 1:  HTML5 contenteditable attribute not working properly on iOS7 Mobile Safari：
+     Answer:
+        * {
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        input,
+        textarea,
+        [contenteditable] {
+            -webkit-user-select: text;
+            user-select: text;
+        }
+       link: http://stackoverflow.com/questions/21295698/html5-contenteditable-attribute-not-working-properly-on-ios7-mobile-safari
